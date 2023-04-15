@@ -106,6 +106,7 @@ public class Teste {
             maquinaService.salvarMaquina(maquina);
         }else {
             System.out.println("Maquina Ja cadastrada ou houve algum erro");
+            System.out.println("TEste");
             System.out.println(janelaGrupo.getJanelas().get(0));
             System.out.println(looca.getRede().getParametros().getNomeDeDominio());
         }
