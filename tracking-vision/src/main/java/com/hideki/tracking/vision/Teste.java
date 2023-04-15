@@ -106,6 +106,7 @@ public class Teste {
             if(janelaGrupo.getJanelas().get(i).getTitulo().length() > 0) {
                 janelas.add(janelaGrupo.getJanelas().get(i).getTitulo());
                 janelasPid.add(janelaGrupo.getJanelas().get(i).getPid());
+                System.out.println("teste");
             }
         }
         System.out.println("Tamanho :"+ janelas.size());
