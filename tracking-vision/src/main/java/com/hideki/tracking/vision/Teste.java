@@ -104,10 +104,10 @@ public class Teste {
         System.out.println("ID " +hostname.get(0).getIdMaquina());
         System.out.println(janelaGrupo.getTotalJanelas());
         System.out.println(janelaGrupo.getTotalJanelasVisiveis());
-        for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
-            if(janelaGrupo.getJanelas().get(i).getTitulo().length() > 0) {
-                janelas.add(janelaGrupo.getJanelas().get(i).getTitulo());
-                janelasPid.add(janelaGrupo.getJanelas().get(i).getPid());
+        for (int i = 0; i < janelaGrupo.getTotalJanelasVisiveis(); i++) {
+            if(janelaGrupo.getJanelasVisiveis().get(i).getTitulo().length() > 0) {
+                janelas.add(janelaGrupo.getJanelasVisiveis().get(i).getTitulo());
+                janelasPid.add(janelaGrupo.getJanelasVisiveis().get(i).getPid());
                 System.out.println("teste");
             }
         }
