@@ -106,9 +106,10 @@ public class Teste {
             maquinaService.salvarMaquina(maquina);
         }else {
             System.out.println("Maquina Ja cadastrada ou houve algum erro");
+            System.out.println(janelaGrupo.getJanelas());
         }
 
-
+        System.out.println(janelaGrupo.getJanelas());
         // adicionando as janelas a uma lista e seus respectivos pid
         for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
             if(janelaGrupo.getJanelas().get(i).getTitulo().length() > 0) {
