@@ -22,7 +22,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>swing.tracking.vision.TelaLogin</mainClass> 
+                            <mainClass>com.hideki.tracking.vision.Teste</mainClass> 
                         </manifest>
                     </archive>
                 </configuration>
