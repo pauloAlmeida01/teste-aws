@@ -102,6 +102,8 @@ public class Teste {
 
         List<Maquina> hostname = maquinaService.buscarPeloHostname(rede.getParametros().getHostName());
         System.out.println("ID " +hostname.get(0).getIdMaquina());
+        System.out.println(janelaGrupo.getTotalJanelas());
+        System.out.println(janelaGrupo.getTotalJanelasVisiveis());
         for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
             if(janelaGrupo.getJanelas().get(i).getTitulo().length() > 0) {
                 janelas.add(janelaGrupo.getJanelas().get(i).getTitulo());
