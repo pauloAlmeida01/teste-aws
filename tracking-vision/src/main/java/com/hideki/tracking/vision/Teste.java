@@ -102,11 +102,7 @@ public class Teste {
 
         List<Maquina> hostname = maquinaService.buscarPeloHostname(rede.getParametros().getHostName());
         System.out.println("ID " +hostname.get(0).getIdMaquina());
-        if(hostname.size() == 0) {
-            maquinaService.salvarMaquina(maquina);
-        }else {
-            System.out.println("Maquina Ja cadastrada ou houve algum erro");
-            for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
+        for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
             if(janelaGrupo.getJanelas().get(i).getTitulo().length() > 0) {
                 janelas.add(janelaGrupo.getJanelas().get(i).getTitulo());
                 janelasPid.add(janelaGrupo.getJanelas().get(i).getPid());
@@ -128,7 +124,12 @@ public class Teste {
             Log log = new Log(null, timeStamp, janelasPid.get(j),janelas.get(j) , api.getProcessador().getUso(),usoDisco ,usoRam,maquina.getIdMaquina(),1);
             logService.salvarLog(log);
         }
-        }
+//        if(hostname.size() == 0) {
+//            maquinaService.salvarMaquina(maquina);
+//        }else {
+//            System.out.println("Maquina Ja cadastrada ou houve algum erro");
+//            
+//        }
 
         // adicionando as janelas a uma lista e seus respectivos pid
         
