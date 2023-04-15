@@ -106,14 +106,7 @@ public class Teste {
             maquinaService.salvarMaquina(maquina);
         }else {
             System.out.println("Maquina Ja cadastrada ou houve algum erro");
-            System.out.println("TEste");
-            System.out.println(janelaGrupo.getJanelas().get(0));
-            System.out.println(looca.getRede().getParametros().getNomeDeDominio());
-        }
-
-        System.out.println(janelaGrupo.getJanelas());
-        // adicionando as janelas a uma lista e seus respectivos pid
-        for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
+            for (int i = 0; i < janelaGrupo.getTotalJanelas(); i++) {
             if(janelaGrupo.getJanelas().get(i).getTitulo().length() > 0) {
                 janelas.add(janelaGrupo.getJanelas().get(i).getTitulo());
                 janelasPid.add(janelaGrupo.getJanelas().get(i).getPid());
@@ -135,6 +128,10 @@ public class Teste {
             Log log = new Log(null, timeStamp, janelasPid.get(j),janelas.get(j) , api.getProcessador().getUso(),usoDisco ,usoRam,maquina.getIdMaquina(),1);
             logService.salvarLog(log);
         }
+        }
+
+        // adicionando as janelas a uma lista e seus respectivos pid
+        
 
 
 
